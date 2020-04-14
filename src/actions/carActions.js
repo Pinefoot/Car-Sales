@@ -11,3 +11,11 @@ export const removeFeature = () =>{
         type: 'REMOVE_FEATURE'
     };
 }
+
+
+export const buyItem = () => {
+    console.log('buyItem running')
+    return{
+        type: 'BUY_ITEM'
+    }
+}

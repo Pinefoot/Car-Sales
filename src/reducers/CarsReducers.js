@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const initialState = {
+export const state = {
     additionalPrice: 0,
     car: {
       price: 26395,
@@ -19,7 +19,7 @@ export const initialState = {
     ]
   };
 
-  export const CarsReducers = (state = initialState, action) => {
+  export const CarsReducers = (state = state, action) => {
     console.log(state, action);
     switch(action.type){
       case 'ADD_NEW_FEATURE':
